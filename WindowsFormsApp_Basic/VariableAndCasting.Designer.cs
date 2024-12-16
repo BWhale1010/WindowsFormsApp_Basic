@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp_Basic
 {
-    partial class Form1
+    partial class VariableAndCasting
     {
         /// <summary>
         /// Required designer variable.
@@ -43,21 +43,21 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Gulim", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label1.Font = new System.Drawing.Font("Hancom Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.label1.Location = new System.Drawing.Point(26, 42);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 23);
+            this.label1.Size = new System.Drawing.Size(98, 30);
             this.label1.TabIndex = 1;
             this.label1.Text = "Result : ";
             // 
-            // Form1
+            // VariableAndCasting
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox_print);
-            this.Name = "Form1";
+            this.Name = "VariableAndCasting";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();

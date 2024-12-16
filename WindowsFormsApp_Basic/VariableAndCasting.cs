@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp_Basic
 {
-    public partial class Form1 : Form
+    public partial class VariableAndCasting : Form
     {
-        public Form1()
+        public VariableAndCasting()
         {
             InitializeComponent();
 
