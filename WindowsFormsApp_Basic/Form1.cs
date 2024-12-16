@@ -16,30 +16,36 @@ namespace WindowsFormsApp_Basic
         {
             InitializeComponent();
 
-            byte classCount = 10;
-            short employeeNum_SeoulBranch = 32000;
-            int chinaPopulation = 700000000;
-            float marathonDistance_m = 42195.1345594f;
-            double apartmentWidth_km2 = 1320.1134534523452345d;
-            decimal virusCount_experiment = 6567000000000000000;
+            // 슬랙 멤버 수
+            byte memberCountInSlack = 27;
+            // 우리나라 전역의 지하철 역 개수
+            short subwayStationsCountOfKorea = 1100;
+            // 유럽의 인구 수
+            int populationOfEurope = 745173774;
+            // 서울의 인구 밀도
+            float populationDensityInSeoul = 15425.47f;
+            // 서울의 경도
+            double longitudeOfSeoul = 126.978445d;
+            // 안드로메다 은하의 별의 개수
+            decimal starsCountInAndromeda = 1000000000000;
 
-            textBox_print.Text += classCount.GetType()+" : ";
-            textBox_print.Text += classCount.ToString();
+            textBox_print.Text += memberCountInSlack.GetType()+" : ";
+            textBox_print.Text += memberCountInSlack.ToString();
             textBox_print.Text += "\r\n";
-            textBox_print.Text += employeeNum_SeoulBranch.GetType() + " : ";
-            textBox_print.Text += employeeNum_SeoulBranch.ToString();
+            textBox_print.Text += subwayStationsCountOfKorea.GetType() + " : ";
+            textBox_print.Text += subwayStationsCountOfKorea.ToString();
             textBox_print.Text += "\r\n";
-            textBox_print.Text += chinaPopulation.GetType() + " : ";
-            textBox_print.Text += chinaPopulation.ToString();
+            textBox_print.Text += populationOfEurope.GetType() + " : ";
+            textBox_print.Text += populationOfEurope.ToString();
             textBox_print.Text += "\r\n";
-            textBox_print.Text += marathonDistance_m.GetType() + " : ";
-            textBox_print.Text += marathonDistance_m.ToString();
+            textBox_print.Text += populationDensityInSeoul.GetType() + " : ";
+            textBox_print.Text += populationDensityInSeoul.ToString();
             textBox_print.Text += "\r\n";
-            textBox_print.Text += apartmentWidth_km2.GetType() + " : ";
-            textBox_print.Text += apartmentWidth_km2.ToString();
+            textBox_print.Text += longitudeOfSeoul.GetType() + " : ";
+            textBox_print.Text += longitudeOfSeoul.ToString();
             textBox_print.Text += "\r\n";
-            textBox_print.Text += virusCount_experiment.GetType() + " : ";
-            textBox_print.Text += virusCount_experiment.ToString();
+            textBox_print.Text += starsCountInAndromeda.GetType() + " : ";
+            textBox_print.Text += starsCountInAndromeda.ToString();
 
 
 
