@@ -17,29 +17,29 @@ namespace WindowsFormsApp_Basic
             InitializeComponent();
 
             byte classCount = 10;
-            short employeeNum = 32000;
+            short employeeNum_SeoulBranch = 32000;
             int chinaPopulation = 700000000;
-            float marathonDistance = 42195.1345594f;
-            double apartmentWidth = 1320.1134534523452345d;
-            decimal virusCount = 6567000000000000000;
+            float marathonDistance_m = 42195.1345594f;
+            double apartmentWidth_km2 = 1320.1134534523452345d;
+            decimal virusCount_experiment = 6567000000000000000;
 
             textBox_print.Text += classCount.GetType()+" : ";
             textBox_print.Text += classCount.ToString();
             textBox_print.Text += "\r\n";
-            textBox_print.Text += employeeNum.GetType() + " : ";
-            textBox_print.Text += employeeNum.ToString();
+            textBox_print.Text += employeeNum_SeoulBranch.GetType() + " : ";
+            textBox_print.Text += employeeNum_SeoulBranch.ToString();
             textBox_print.Text += "\r\n";
             textBox_print.Text += chinaPopulation.GetType() + " : ";
             textBox_print.Text += chinaPopulation.ToString();
             textBox_print.Text += "\r\n";
-            textBox_print.Text += marathonDistance.GetType() + " : ";
-            textBox_print.Text += marathonDistance.ToString();
+            textBox_print.Text += marathonDistance_m.GetType() + " : ";
+            textBox_print.Text += marathonDistance_m.ToString();
             textBox_print.Text += "\r\n";
-            textBox_print.Text += apartmentWidth.GetType() + " : ";
-            textBox_print.Text += apartmentWidth.ToString();
+            textBox_print.Text += apartmentWidth_km2.GetType() + " : ";
+            textBox_print.Text += apartmentWidth_km2.ToString();
             textBox_print.Text += "\r\n";
-            textBox_print.Text += virusCount.GetType() + " : ";
-            textBox_print.Text += virusCount.ToString();
+            textBox_print.Text += virusCount_experiment.GetType() + " : ";
+            textBox_print.Text += virusCount_experiment.ToString();
 
 
 
