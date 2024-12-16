@@ -17,11 +17,11 @@ namespace WindowsFormsApp_Basic
             InitializeComponent();
 
             byte classCount = 10;
-            short employeeNum = 100;
-            int boardNum = 405004004;
-            float marathonDistance = 42.195f;
-            double apartmentWidth = 10.11d;
-            decimal worldPopulation = 7000000000;
+            short employeeNum = 32000;
+            int chinaPopulation = 700000000;
+            float marathonDistance = 42195.1345594f;
+            double apartmentWidth = 1320.1134534523452345d;
+            decimal virusCount = 6567000000000000000;
 
             textBox_print.Text += classCount.GetType()+" : ";
             textBox_print.Text += classCount.ToString();
@@ -29,8 +29,8 @@ namespace WindowsFormsApp_Basic
             textBox_print.Text += employeeNum.GetType() + " : ";
             textBox_print.Text += employeeNum.ToString();
             textBox_print.Text += "\r\n";
-            textBox_print.Text += boardNum.GetType() + " : ";
-            textBox_print.Text += boardNum.ToString();
+            textBox_print.Text += chinaPopulation.GetType() + " : ";
+            textBox_print.Text += chinaPopulation.ToString();
             textBox_print.Text += "\r\n";
             textBox_print.Text += marathonDistance.GetType() + " : ";
             textBox_print.Text += marathonDistance.ToString();
@@ -38,8 +38,8 @@ namespace WindowsFormsApp_Basic
             textBox_print.Text += apartmentWidth.GetType() + " : ";
             textBox_print.Text += apartmentWidth.ToString();
             textBox_print.Text += "\r\n";
-            textBox_print.Text += worldPopulation.GetType() + " : ";
-            textBox_print.Text += worldPopulation.ToString();
+            textBox_print.Text += virusCount.GetType() + " : ";
+            textBox_print.Text += virusCount.ToString();
 
 
 
