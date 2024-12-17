@@ -25,7 +25,8 @@ namespace WindowsFormsApp_Basic
             stringArray[3] = "그 사람의 그림자는 그랬다.".Replace("그", "이").ToString();
             stringArray[4] = "삼성 갤럭시".Insert(3, "애플").ToString();
             stringArray[5] = "오늘은 왠지 더 배고프다".Remove(6,2).ToString();
-            subArray = "이름, 나이, 전화번호".Split(',');
+            char[] ch = new char[2] { ',', ' '};
+            subArray = "이름, 나이, 전화번호".Split(ch, 3, StringSplitOptions.RemoveEmptyEntries);
             stringArray[6] = subArray[0].ToString();
             stringArray[7] = subArray[1].ToString();
             stringArray[8] = subArray[2].ToString();
