@@ -46,9 +46,6 @@ namespace WindowsFormsApp_Basic
             textBox_print.Text += "\r\n";
             textBox_print.Text += starsCountInAndromeda.GetType() + " : ";
             textBox_print.Text += starsCountInAndromeda.ToString();
-
-
-
         }
     }
 }
