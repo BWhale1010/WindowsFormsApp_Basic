@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp_Basic
 {
-    public partial class Form2 : Form
+    public partial class StringAndArray : Form
     {
-        public Form2()
+        public StringAndArray()
         {
             InitializeComponent();
 

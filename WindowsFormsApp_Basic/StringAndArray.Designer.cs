@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp_Basic
 {
-    partial class Form2
+    partial class StringAndArray
     {
         /// <summary>
         /// Required designer variable.
