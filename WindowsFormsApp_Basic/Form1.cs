@@ -19,13 +19,13 @@ namespace WindowsFormsApp_Basic
             int a = 10;
             int b = 3;
 
-            int[] returnNumArray = divide(a, b);
+            int[] returnNumArray = numberOperation(a, b);
 
             textBox_print.Text = "나누기 : "+returnNumArray[0].ToString() + ", 나머지 : "  + returnNumArray[1];
 
         }
 
-        int[] divide(int a, int b)
+        int[] numberOperation(int a, int b)
         {
             int[] numArray = new int[2];
             numArray[0] = a / b;
