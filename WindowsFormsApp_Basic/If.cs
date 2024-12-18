@@ -12,6 +12,7 @@ namespace WindowsFormsApp_Basic
 {
     public partial class If : Form
     {
+
         public If()
         {
             InitializeComponent();
@@ -32,6 +33,7 @@ namespace WindowsFormsApp_Basic
 
         bool CoinThrow()
         {
+
             Random random = new Random();
 
             int randomNum = random.Next();
