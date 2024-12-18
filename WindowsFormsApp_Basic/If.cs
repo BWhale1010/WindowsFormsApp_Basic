@@ -18,7 +18,16 @@ namespace WindowsFormsApp_Basic
 
             bool result = CoinThrow();
 
-            textBox_print.Text = result.ToString();
+            bool userInput = false;
+
+            if (userInput == result)
+            {
+                textBox_print.Text = "승리";
+            }
+            else
+            {
+                textBox_print.Text = "패배";
+            }
         }
 
         bool CoinThrow()
