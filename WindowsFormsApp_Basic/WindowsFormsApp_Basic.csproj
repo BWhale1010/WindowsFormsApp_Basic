@@ -76,6 +76,12 @@
     <Compile Include="StringAndArray.Designer.cs">
       <DependentUpon>StringAndArray.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserInput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInput.Designer.cs">
+      <DependentUpon>UserInput.cs</DependentUpon>
+    </Compile>
     <Compile Include="VariableAndCasting.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StringAndArray.resx">
       <DependentUpon>StringAndArray.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInput.resx">
+      <DependentUpon>UserInput.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VariableAndCasting.resx">
       <DependentUpon>VariableAndCasting.cs</DependentUpon>
