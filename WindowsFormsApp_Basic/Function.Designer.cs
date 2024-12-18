@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp_Basic
 {
-    partial class Form1
+    partial class Function
     {
         /// <summary>
         /// Required designer variable.

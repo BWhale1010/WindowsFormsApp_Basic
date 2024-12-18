@@ -46,11 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="If.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="If.Designer.cs">
+      <DependentUpon>If.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Function.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Function.Designer.cs">
+      <DependentUpon>Function.cs</DependentUpon>
     </Compile>
     <Compile Include="String.cs">
       <SubType>Form</SubType>
@@ -72,8 +78,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="If.resx">
+      <DependentUpon>If.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Function.resx">
+      <DependentUpon>Function.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="String.resx">
       <DependentUpon>String.cs</DependentUpon>
