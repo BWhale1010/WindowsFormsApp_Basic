@@ -12,7 +12,7 @@ namespace WindowsFormsApp_Basic
 {
     public partial class UserInput : Form
     {
-        private bool randomResult = false;
+        private bool randomResult;
 
         public UserInput()
 
@@ -70,7 +70,7 @@ namespace WindowsFormsApp_Basic
             }
         }
 
-        bool coinThrowAndResult()
+        private bool coinThrowAndResult()
         {
             Random random = new Random();
             int randomNum = random.Next(0, 100);
@@ -90,7 +90,7 @@ namespace WindowsFormsApp_Basic
             return result;
         }
 
-        void printResult(string userInput, bool randomResult)
+        private void printResult(string userInput, bool randomResult)
         {
             textBox_print.Text = "입력하신 값은 " + userInput + "입니다.\r\n";
             textBox_print.Text += "동전 던지기 결과...\r\n";
