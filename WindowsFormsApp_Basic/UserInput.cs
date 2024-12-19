@@ -13,20 +13,19 @@ namespace WindowsFormsApp_Basic
     public partial class UserInput : Form
     {
         private bool randomResult;
+        private string userInput;
 
         public UserInput()
 
         {
             InitializeComponent();
-
-            
         }
 
         private void radioButton_true_Click(object sender, EventArgs e)
         {
             if (radioButton_true.Checked)
             {
-                string userInput = "true";
+                userInput = "true";
                 textBox_input.Text = userInput;
 
                 randomResult = coinThrowAndResult();
@@ -38,7 +37,7 @@ namespace WindowsFormsApp_Basic
         {
             if (radioButton_false.Checked)
             {
-                string userInput = "false";
+                userInput = "false";
                 textBox_input.Text = userInput;
 
                 randomResult = coinThrowAndResult();
@@ -48,7 +47,7 @@ namespace WindowsFormsApp_Basic
 
         private void button_input_Click(object sender, EventArgs e)
         {
-            string userInput = textBox_input.Text.ToLower();
+            userInput = textBox_input.Text.ToLower();
 
             if (userInput.Equals("true") || userInput.Equals("false"))
             {
