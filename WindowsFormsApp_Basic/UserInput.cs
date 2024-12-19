@@ -48,11 +48,9 @@ namespace WindowsFormsApp_Basic
         {
             string userInput = textBox_input.Text.ToLower();
 
-            bool randomResult = false;
-
             if (userInput.Equals("true") || userInput.Equals("false"))
             {
-                randomResult = coinThrowAndResult();
+                bool randomResult = coinThrowAndResult();
                 printResult(userInput, randomResult);
             }
             else
