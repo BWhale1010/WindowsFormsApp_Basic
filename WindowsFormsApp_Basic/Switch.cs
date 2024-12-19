@@ -28,6 +28,8 @@ namespace WindowsFormsApp_Basic
         public Switch()
         {
             InitializeComponent();
+
+            textBox_print.Text = "요일을 영어 소문자로 적어주세요.";
         }
 
         private void button_input_Click(object sender, EventArgs e)
