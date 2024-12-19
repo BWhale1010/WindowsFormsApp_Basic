@@ -50,6 +50,15 @@ namespace WindowsFormsApp_Basic
 
             if (userInput.Equals("true") || userInput.Equals("false"))
             {
+                if (userInput.Equals("true"))
+                {
+                    radioButton_true.Checked = true;
+                }
+                else if (userInput.Equals("false"))
+                {
+                    radioButton_false.Checked = true;
+                }
+
                 bool randomResult = coinThrowAndResult();
                 printResult(userInput, randomResult);
             }
