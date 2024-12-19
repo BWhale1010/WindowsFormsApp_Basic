@@ -58,6 +58,9 @@ namespace WindowsFormsApp_Basic
                 case (Week)6:
                     textBox_print.Text = "토요일 좋아";
                     break;
+                case (Week)7:
+                    textBox_print.Text = "올바른 요일을 작성해 주세요.";
+                    break;
             }
         }
 
@@ -93,7 +96,7 @@ namespace WindowsFormsApp_Basic
                     userInputCovertNum = 6;
                     break;
                 default:
-                    textBox_print.Text = "올바른 요일을 작성해주세요.";
+                    userInputCovertNum = 7;
                     break;
             }
 
