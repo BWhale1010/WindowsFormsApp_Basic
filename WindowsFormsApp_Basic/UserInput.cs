@@ -12,8 +12,10 @@ namespace WindowsFormsApp_Basic
 {
     public partial class UserInput : Form
     {
-        bool randomResult = false;
+        private bool randomResult = false;
+
         public UserInput()
+
         {
             InitializeComponent();
 
@@ -59,7 +61,7 @@ namespace WindowsFormsApp_Basic
                     radioButton_false.Checked = true;
                 }
 
-                bool randomResult = coinThrowAndResult();
+                randomResult = coinThrowAndResult();
                 printResult(userInput, randomResult);
             }
             else
@@ -93,11 +95,11 @@ namespace WindowsFormsApp_Basic
             textBox_print.Text = "입력하신 값은 " + userInput + "입니다.\r\n";
             textBox_print.Text += "동전 던지기 결과...\r\n";
 
-            if (userInput.Equals("true") && randomResult == true)
+            if (userInput.Equals("true") && randomResult)
             {
                 textBox_print.Text += "승리~!";
             }
-            else if (userInput.Equals("false") && randomResult == false)
+            else if (userInput.Equals("false") && !randomResult)
             {
                 textBox_print.Text += "승리~!";
             }
