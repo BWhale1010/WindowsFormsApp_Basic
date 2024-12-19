@@ -84,11 +84,11 @@ namespace WindowsFormsApp_Basic
             textBox_print.Text = "입력하신 값은 " + userInput + "입니다.\r\n";
             textBox_print.Text += "동전 던지기 결과...\r\n";
 
-            if (userInput.Equals("true") && randomResult)
+            if (userInput.Equals("true") && randomResult == true)
             {
                 textBox_print.Text += "승리~!";
             }
-            else if (userInput.Equals("false") && randomResult)
+            else if (userInput.Equals("false") && randomResult == false)
             {
                 textBox_print.Text += "승리~!";
             }
