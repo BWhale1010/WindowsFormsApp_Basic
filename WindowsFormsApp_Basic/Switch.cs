@@ -29,7 +29,7 @@ namespace WindowsFormsApp_Basic
         {
             InitializeComponent();
 
-            textBox_print.Text = "요일을 영어 소문자로 적어주세요.";
+            textBox_print.Text = "요일을 영어로 적어주세요.";
         }
 
         private void button_input_Click(object sender, EventArgs e)
@@ -68,6 +68,8 @@ namespace WindowsFormsApp_Basic
 
         Week convertUserInput(string userInput)
         {
+            userInput = userInput.ToLower();
+
             switch (userInput)
             {
                 case "sunday":
