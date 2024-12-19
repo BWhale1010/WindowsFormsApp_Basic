@@ -16,7 +16,6 @@ namespace WindowsFormsApp_Basic
         private string userInput;
 
         public UserInput()
-
         {
             InitializeComponent();
         }

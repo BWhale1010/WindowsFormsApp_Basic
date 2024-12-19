@@ -76,6 +76,12 @@
     <Compile Include="StringAndArray.Designer.cs">
       <DependentUpon>StringAndArray.cs</DependentUpon>
     </Compile>
+    <Compile Include="Switch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Switch.Designer.cs">
+      <DependentUpon>Switch.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserInput.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -104,6 +110,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StringAndArray.resx">
       <DependentUpon>StringAndArray.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Switch.resx">
+      <DependentUpon>Switch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserInput.resx">
       <DependentUpon>UserInput.cs</DependentUpon>

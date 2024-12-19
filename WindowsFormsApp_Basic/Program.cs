@@ -16,7 +16,7 @@ namespace WindowsFormsApp_Basic
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new UserInput());
+            Application.Run(new Switch());
         }
     }
 }
