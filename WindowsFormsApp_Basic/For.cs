@@ -31,12 +31,22 @@ namespace WindowsFormsApp_Basic
 
                 string[] studentNameArray = new string[studentNum];
 
-                for (int a = 0; a < studentNum; a++)
+                //for (int a = 0; a < studentNum; a++)
+                //{
+                //    studentNameArray[a] = "학생" + (a + 1);
+                //    studentNumArray[a] = random.Next(0, 101);
+
+                //    printMsg(studentNameArray[a], studentNumArray[a]);
+                //}
+
+                int a = 0;
+                while (a<studentNum)
                 {
                     studentNameArray[a] = "학생" + (a + 1);
                     studentNumArray[a] = random.Next(0, 101);
 
                     printMsg(studentNameArray[a], studentNumArray[a]);
+                    a++;
                 }
             }
             else
