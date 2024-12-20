@@ -10,10 +10,9 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp_Basic
 {
-    public partial class Form1 : Form
+    public partial class For : Form
     {
-
-        public Form1()
+        public For()
         {
             InitializeComponent();
         }
@@ -24,17 +23,25 @@ namespace WindowsFormsApp_Basic
             textBox_print.Text = "";
 
 
-            int studentNum = Int32.Parse(textBox_input.Text);
-            int[] studentNumArray = new int[studentNum];
+            int studentNum;
 
-            string[] studentNameArray = new string[studentNum];
-
-            for(int a = 0; a<studentNum; a++)
+            if (int.TryParse(textBox_input.Text, out studentNum))
             {
-                studentNameArray[a] = "학생" + (a+1);
-                studentNumArray[a] = random.Next(0,100);
+                int[] studentNumArray = new int[studentNum];
 
-                printMsg(studentNameArray[a], studentNumArray[a]);
+                string[] studentNameArray = new string[studentNum];
+
+                for (int a = 0; a < studentNum; a++)
+                {
+                    studentNameArray[a] = "학생" + (a + 1);
+                    studentNumArray[a] = random.Next(0, 101);
+
+                    printMsg(studentNameArray[a], studentNumArray[a]);
+                }
+            }
+            else
+            {
+                textBox_print.Text = "숫자만 입력";
             }
         }
 
