@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp_Basic
 {
-    public partial class While : Form
+    public partial class RSPGame : Form
     {
         public int userInput = 0;
         public int userWin = 0;
@@ -22,7 +22,7 @@ namespace WindowsFormsApp_Basic
             보
         }
 
-        public While()
+        public RSPGame()
         {
             InitializeComponent();
         }

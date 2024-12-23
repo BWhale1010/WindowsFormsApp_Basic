@@ -108,11 +108,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="While.cs">
+    <Compile Include="RSPGame.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="While.Designer.cs">
-      <DependentUpon>While.cs</DependentUpon>
+    <Compile Include="RSPGame.Designer.cs">
+      <DependentUpon>RSPGame.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="For.resx">
       <DependentUpon>For.cs</DependentUpon>
@@ -153,8 +153,8 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="While.resx">
-      <DependentUpon>While.cs</DependentUpon>
+    <EmbeddedResource Include="RSPGame.resx">
+      <DependentUpon>RSPGame.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

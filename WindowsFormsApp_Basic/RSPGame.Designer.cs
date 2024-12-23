@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp_Basic
 {
-    partial class While
+    partial class RSPGame
     {
         /// <summary>
         /// Required designer variable.
