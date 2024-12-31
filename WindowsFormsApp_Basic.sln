@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp_Basic", "Wi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp_vendingMachine", "WindowsFormsApp_vendingMachine\WindowsFormsApp_vendingMachine.csproj", "{D73ADD28-129B-4F11-BD9E-78F862B3BB65}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp_RPGGame", "WindowsFormsApp_RPGGame\WindowsFormsApp_RPGGame.csproj", "{95CD8268-7127-41C3-8E02-709E7FE3CF44}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D73ADD28-129B-4F11-BD9E-78F862B3BB65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D73ADD28-129B-4F11-BD9E-78F862B3BB65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D73ADD28-129B-4F11-BD9E-78F862B3BB65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95CD8268-7127-41C3-8E02-709E7FE3CF44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95CD8268-7127-41C3-8E02-709E7FE3CF44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95CD8268-7127-41C3-8E02-709E7FE3CF44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95CD8268-7127-41C3-8E02-709E7FE3CF44}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
