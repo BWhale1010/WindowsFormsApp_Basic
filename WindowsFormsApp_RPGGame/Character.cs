@@ -12,6 +12,12 @@ namespace WindowsFormsApp_RPGGame
         private int hp;
         private int att;
 
+        public Character(int hp, int att)
+        {
+            this.hp = hp;
+            this.att = att;
+        }
+
         public string Name
         {
             get { return name; }
@@ -34,6 +40,11 @@ namespace WindowsFormsApp_RPGGame
         {
 
             return att;
+        }
+
+        public virtual void Talk()
+        {
+            //MessageBox.Show("");
         }
     }
 }

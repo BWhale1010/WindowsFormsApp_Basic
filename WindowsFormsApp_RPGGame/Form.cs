@@ -13,9 +13,9 @@ namespace WindowsFormsApp_RPGGame
 {
     public partial class Form : System.Windows.Forms.Form
     {
-        Player player = new Player();
-        NPC npc = new NPC();
-        Monster monster = new Monster();
+
+        NPC npc = new NPC(10, 1);
+        Monster monster = new Monster(0,0);
 
         //private Ork ork;
         //private Slime slime;
@@ -25,10 +25,12 @@ namespace WindowsFormsApp_RPGGame
             InitializeComponent();
 
             Random random = new Random();
-
+            Player player = new Player(20, random.Next(5, 10));
             player.Name = "PLAYER";
-            player.HP = 20;
-            player.Att = random.Next(5, 10);
+            //player.HP = 20;
+            //player.Att = random.Next(5, 10);
+
+            
 
             npc.Att = 1;
 
@@ -36,7 +38,7 @@ namespace WindowsFormsApp_RPGGame
 
             if (choseMonTypeVal == 0)
             {
-                monster = new Ork();
+                monster = new Ork(random.Next(15, 20), random.Next(5, 8));
                 monster.Name = "ORK";
                 monster.HP = random.Next(15,20);
                 monster.Att = random.Next(5, 8);
@@ -44,23 +46,27 @@ namespace WindowsFormsApp_RPGGame
             }
             else
             {
-                monster = new Slime();
+                monster = new Slime(random.Next(12, 25), random.Next(3, 6));
                 monster.Name = "SLIME";
                 monster.HP = random.Next(12, 25);
                 monster.Att = random.Next(3,6);
                 //slime = new Slime();
 
             }
+            monster.HP = 2;
 
-            while (player.HP >= 1 || monster.HP >= 1)
+            while (player.HP >= 1 && monster.HP >= 1)
             {
                 
+                player.Talk();
                 int monsterDamage = player.Attack();
                 monster.HP -= monsterDamage;
 
+                monster.Talk();
                 int playDamage = monster.Attack();
                 //monster.AddHitCount();
                 player.HP -= playDamage;
+
 
                 if (monster.ramdomMonsterAndSkill() == 0) 
                 {
@@ -84,6 +90,7 @@ namespace WindowsFormsApp_RPGGame
             {
                 MessageBox.Show("플레이어 승");
                 player.GainExp(monster.DropExp());
+                player.HP = 20;
             } 
             else
             {

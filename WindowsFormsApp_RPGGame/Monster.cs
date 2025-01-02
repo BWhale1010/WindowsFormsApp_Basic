@@ -11,6 +11,10 @@ namespace WindowsFormsApp_RPGGame
     {
         Random random = new Random();
 
+        public Monster(int hp, int att) : base(hp, att)
+        {
+        }
+
         public int DropExp()
         {
             Random random = new Random();
@@ -24,10 +28,19 @@ namespace WindowsFormsApp_RPGGame
             return random.Next(0, 2);
         }
 
+        public override void Talk()
+        {
+            MessageBox.Show("플레이어 죽어라!");
+        }
+
     }
 
     internal class Ork : Monster
     {
+        public Ork(int hp, int att) : base(hp, att)
+        {
+        }
+
         public int AdditionalHit()
         {
             return 1;
@@ -37,6 +50,10 @@ namespace WindowsFormsApp_RPGGame
 
     internal class Slime : Monster
     {
+        public Slime(int hp, int att) : base(hp, att)
+        {
+        }
+
         public void HpRecover()
         {
             this.HP += 1;
