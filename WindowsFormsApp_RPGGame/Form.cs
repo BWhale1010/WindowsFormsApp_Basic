@@ -88,9 +88,10 @@ namespace WindowsFormsApp_RPGGame
 
             if (player.HP> monster.HP) 
             {
+                player.HP = 20;
                 MessageBox.Show("플레이어 승");
                 player.GainExp(monster.DropExp());
-                player.HP = 20;
+                
             } 
             else
             {

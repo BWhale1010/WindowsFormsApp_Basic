@@ -43,7 +43,6 @@ namespace WindowsFormsApp_RPGGame
         public void LevelUp(int addedHp)
         {
             this.level = level + 1;
-            this.HP = 20;
             this.HP = HP + addedHp;
 
         }
@@ -51,7 +50,7 @@ namespace WindowsFormsApp_RPGGame
         public void LevelUp(int addedHp, int addedAtt)
         {
             this.level = level + 1;
-            this.HP =  + addedHp;
+            this.HP = HP + addedHp;
             this.Att = Att + addedAtt;
         }
 
