@@ -76,6 +76,12 @@
     <Compile Include="Function.Designer.cs">
       <DependentUpon>Function.cs</DependentUpon>
     </Compile>
+    <Compile Include="RefOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RefOut.Designer.cs">
+      <DependentUpon>RefOut.cs</DependentUpon>
+    </Compile>
     <Compile Include="String.cs">
       <SubType>Form</SubType>
     </Compile>

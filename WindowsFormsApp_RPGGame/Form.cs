@@ -84,6 +84,11 @@ namespace WindowsFormsApp_RPGGame
                 npc.Talk();
                 monsterDamage = npc.Attack();
                 monster.HP -= monsterDamage;
+
+                if (monster.HP < 1 || player.HP < 1)
+                {
+                    break;
+                }
             }
 
             if (player.HP> monster.HP) 
