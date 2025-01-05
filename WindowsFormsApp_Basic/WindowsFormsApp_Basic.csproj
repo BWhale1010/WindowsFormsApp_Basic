@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Collection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Collection.Designer.cs">
+      <DependentUpon>Collection.cs</DependentUpon>
+    </Compile>
     <Compile Include="For.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,9 @@
     <Compile Include="RSPGame.Designer.cs">
       <DependentUpon>RSPGame.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Collection.resx">
+      <DependentUpon>Collection.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="For.resx">
       <DependentUpon>For.cs</DependentUpon>
     </EmbeddedResource>
