@@ -33,6 +33,7 @@ namespace WindowsFormsApp_Basic
             if (dialog.ShowDialog() == DialogResult.OK)
             {
                 selectedPath = dialog.SelectedPath;
+                textBox1.Text = selectedPath;
                 fileType = textBox2.Text;
 
                 listBox1.Items.Clear();
