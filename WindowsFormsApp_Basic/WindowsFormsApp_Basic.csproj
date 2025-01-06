@@ -106,6 +106,18 @@
     <Compile Include="Switch.Designer.cs">
       <DependentUpon>Switch.cs</DependentUpon>
     </Compile>
+    <Compile Include="ThreadPractice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThreadPractice.Designer.cs">
+      <DependentUpon>ThreadPractice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThreadPractice1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThreadPractice1.Designer.cs">
+      <DependentUpon>ThreadPractice1.cs</DependentUpon>
+    </Compile>
     <Compile Include="TryCatch.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +170,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Switch.resx">
       <DependentUpon>Switch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThreadPractice.resx">
+      <DependentUpon>ThreadPractice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThreadPractice1.resx">
+      <DependentUpon>ThreadPractice1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TryCatch.resx">
       <DependentUpon>TryCatch.cs</DependentUpon>
