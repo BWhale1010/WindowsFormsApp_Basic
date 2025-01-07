@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AsyncAwait.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AsyncAwait.Designer.cs">
+      <DependentUpon>AsyncAwait.cs</DependentUpon>
+    </Compile>
     <Compile Include="Collection.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +156,9 @@
     <Compile Include="RSPGame.Designer.cs">
       <DependentUpon>RSPGame.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AsyncAwait.resx">
+      <DependentUpon>AsyncAwait.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Collection.resx">
       <DependentUpon>Collection.cs</DependentUpon>
     </EmbeddedResource>
