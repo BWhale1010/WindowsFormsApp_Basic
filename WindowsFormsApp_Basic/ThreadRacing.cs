@@ -19,8 +19,8 @@ namespace WindowsFormsApp_Basic
         Stopwatch stopwatch;
         private Random random = new Random();
         static Object lockObject = new Object();
-        bool[] carStop = new bool[5];
-        int[] carDriving = new int[5];
+        bool[] carStop;
+        int[] carDriving;
 
         public ThreadRacing()
         {
@@ -29,9 +29,18 @@ namespace WindowsFormsApp_Basic
             racingThreads = new Thread[5];
 
             stopwatch = new Stopwatch();
+        }
 
+        void RandomSleep()
+        {
+            int sleepTime = (int)(random.NextDouble() * 900.0)+100;
+            Thread.Sleep(sleepTime);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
             System.Windows.Forms.ProgressBar[] progressBars =
-            {
+{
                 progressBar1, progressBar2, progressBar3, progressBar4, progressBar5
             };
 
@@ -43,16 +52,10 @@ namespace WindowsFormsApp_Basic
                 progressBar.Step = 1;
                 progressBar.Value = 0;
             }
-        }
 
-        void RandomSleep()
-        {
-            int sleepTime = (int)(random.NextDouble() * 900.0)+100;
-            Thread.Sleep(sleepTime);
-        }
+            carStop = new bool[5];
+            carDriving = new int[5];
 
-        private void button1_Click(object sender, EventArgs e)
-        {
             textBox1.Text = "레이싱 시작~!\r\n\r\n";
             stopwatch.Restart();
 
@@ -76,6 +79,9 @@ namespace WindowsFormsApp_Basic
             while (!carStop[carNum])
             {
                 carDriving[carNum]++;
+                
+                ProgressPrint(carNum);
+
                 if (carDriving[carNum] == 10)
                 {
                     carStop[carNum] = true;
@@ -92,7 +98,6 @@ namespace WindowsFormsApp_Basic
                         textBox1.Text += $"{carNum + 1}번 차 도착 : {arriveTime}ms\r\n\r\n";
                     }
                 }
-                ProgressPrint(carNum);
                 
                 RandomSleep();
             }
@@ -102,13 +107,17 @@ namespace WindowsFormsApp_Basic
         {
             System.Windows.Forms.ProgressBar[] progressBars = { progressBar1, progressBar2, progressBar3, progressBar4, progressBar5 };
 
-            if (progressBars[carNum].InvokeRequired && progressBars[carNum].Value < 10)
+            if (progressBars[carNum].InvokeRequired)
             {
                 progressBars[carNum].Invoke(new MethodInvoker(() =>
                 {
                     progressBars[carNum].Value += progressBars[carNum].Step;
                 }
                 ));
+            }
+            else
+            {
+                progressBars[carNum].Value += progressBars[carNum].Step;
             }
         }
     }
