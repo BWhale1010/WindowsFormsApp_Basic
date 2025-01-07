@@ -118,6 +118,12 @@
     <Compile Include="ThreadPractice1.Designer.cs">
       <DependentUpon>ThreadPractice1.cs</DependentUpon>
     </Compile>
+    <Compile Include="ThreadRacing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThreadRacing.Designer.cs">
+      <DependentUpon>ThreadRacing.cs</DependentUpon>
+    </Compile>
     <Compile Include="TryCatch.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -176,6 +182,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ThreadPractice1.resx">
       <DependentUpon>ThreadPractice1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThreadRacing.resx">
+      <DependentUpon>ThreadRacing.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TryCatch.resx">
       <DependentUpon>TryCatch.cs</DependentUpon>
